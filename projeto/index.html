@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa do Tempo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="navbar-logo">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>Casa do Tempo</span>
+        </a>
+
+        <nav class="nav-container" id="nav-container">
+            <ul class="nav-list">
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#doacoes" class="btn-cta">Doe aqui</a></li>
+                <li>
+                    <button id="theme-toggle" class="btn-theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <button id="btn-mobile" class="menu-hamburguer">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-overlay"></div>
+            <img src="assets/images/hero-idosos.jpg" alt="Idosos felizes em comunidade" class="hero-bg">
+
+            <div class="hero-content">
+                <span class="hero-badge">Desde 2026 — Transformando Vidas</span>
+                <h1 class="hero-title">Cuidar é um ato<br>de amor e dignidade</h1>
+                
+                <p class="hero-subtitle">
+                    A Casa do Tempo apoia idosos em situação de vulnerabilidade social,
+                    oferecendo cuidado, carinho e oportunidades para um envelhecimento digno.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#doe" class="btn btn--primary btn--lg">Quero Ajudar</a>
+                    <a href="#sobre" class="btn btn--outline btn--lg">Conheça a ONG</a>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+                <div class="container hero-stats-inner">
+                    <div class="stat-card">
+                        <span class="stat-card-number">2.400+</span>
+                        <span class="stat-card-label">Idosos Atendidos</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-card-number">380</span>
+                        <span class="stat-card-label">Voluntários Ativos</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-card-number">1</span>
+                        <span class="stat-card-label">Ano(s) de Atuação</span>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <span class="stat-card-number">12</span>
+                        <span class="stat-card-label">Cidades Atendidas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container about section" id="sobre">
+            <div class="about-inner"> 
+                <div class="about-image-wrap">
+                    <img src="assets/images/about-idosos.jpg" alt="Comunidade de idosos" class="about-image">
+                    <div class="about-badge-float">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Organização reconhecida<br>Nacionalmente</span>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <span class="section-label">Quem Somos</span>
+                    <h2 class="section-title">Uma rede de cuidado e <em>pertencimento</em></h2>
+                    <p>
+                        A <strong>Casa do Tempo</strong> nasceu da convicção de que todo idoso merece
+                        viver com dignidade, afeto e pertencimento. Atuamos em comunidades periféricas
+                        oferecendo suporte social, saúde preventiva e integração comunitária.
+                    </p>
+                    <p>
+                        Nossa equipe multidisciplinar trabalha diariamente para garantir que nenhum idoso
+                        se sinta só ou esquecido.
+                    </p>
+                    <ul class="about-values">
+                        <li><i class="fa-solid fa-circle-check"></i> Atendimento humanizado e personalizado</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Transparência na gestão dos recursos</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Parceria com famílias e comunidades</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Defesa dos direitos dos idosos</li>
+                    </ul>
+                    <a href="#programas" class="btn btn--primary">Nossos Programas</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="volunteers section" id="voluntarios">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Nossa Equipe</span>
+                    <h2 class="section-title">Corações que <em>transformam</em></h2>
+                    <p class="section-desc">Descubra as histórias de quem dedica seu tempo e amor para transformar vidas na Casa do Tempo.</p>
+                </div>
+
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="volunteer-card">
+                            <img src="assets/images/volunteer1.jpg" alt="Voluntário" class="volunteer-img">
+                            <div class="volunteer-info">
+                                <h3>Ana Silva</h3>
+                                <span>Assistente Social</span>
+                                <p>"Cuidar dos nossos idosos é aprender sobre a vida todos os dias."</p>
+                            </div>
+                        </div>
+                        <div class="volunteer-card">
+                            <img src="assets/images/volunteer2.jpg" alt="Voluntário" class="volunteer-img">
+                            <div class="volunteer-info">
+                                <h3>Dr. Ricardo Soares</h3>
+                                <span>Médico Geriatra</span>
+                                <p>"A dignidade na terceira idade é um direito que defendemos com garra."</p>
+                            </div>
+                        </div>
+                        <div class="volunteer-card">
+                            <img src="assets/images/volunteer3.jpeg" alt="Voluntário" class="volunteer-img">
+                            <div class="volunteer-info">
+                                <h3>Carla Gomes</h3>
+                                <span>Enfermeira</span>
+                                <p>"O carinho é o melhor remédio que podemos oferecer aqui."</p>
+                            </div>
+                        </div>
+                        <div class="volunteer-card">
+                            <img src="assets/images/volunteer4.webp" alt="Voluntário" class="volunteer-img">
+                            <div class="volunteer-info">
+                                <h3>Marcos Lima</h3>
+                                <span>Educador Físico</span>
+                                <p>"Movimento é vida, e ver o sorriso deles nas atividades não tem preço."</p>
+                            </div>
+                            
+                        </div>
+                        <div class="volunteer-card">
+                            <img src="assets/images/volunteer5.webp" alt="Voluntário" class="volunteer-img">
+                            <div class="volunteer-info">
+                                <h3>Beatriz Soares</h3>
+                                <span>Terapeuta Ocupacional</span>
+                                <p>"Estimular a autonomia é devolver o brilho no olhar de quem já fez tanto por nós."</p>
+                            </div>
+                        </div>
+                        <div class="volunteer-card">
+                            <img src="assets/images/volunteer6.jpg" alt="Voluntário" class="volunteer-img">
+                            <div class="volunteer-info">
+                                <h3>Maria Novaes</h3>
+                                <span>Cozinheira Voluntária</span>
+                                <p>"Uma refeição feita com carinho é um dos melhores presentes que podemos oferecer."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="donation section" id="doacoes">
+            <div class="container donation-inner">
+                
+                <div class="donation-text">
+                    <span class="section-label">Apoie Nossa Causa</span>
+                    <h2 class="section-title">Sua doação muda<br><em>histórias reais</em></h2>
+                    <p class="donation-desc">
+                        Com sua contribuição, mantemos a Casa do Tempo ativa e levamos mais cuidado, carinho e dignidade a milhares de idosos. Cada contribuição, grande ou pequena, tem um impacto direto e mensurável.
+                    </p>
+                    
+                    <div class="donation-impact-list">
+                        <div class="donation-impact-item">
+                            <span class="impact-value">R$ 30</span>
+                            <span>= 3 refeições diárias</span>
+                        </div>
+                        <div class="donation-impact-item">
+                            <span class="impact-value">R$ 80</span>
+                            <span>= 1 consulta médica preventiva</span>
+                        </div>
+                        <div class="donation-impact-item">
+                            <span class="impact-value">R$ 150</span>
+                            <span>= 1 mês de visitas domiciliares</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="donation-form-wrap">
+                    <form class="donation-form" id="form-doacao">
+                        <h3 class="form-title">Faça sua doação</h3>
+                        
+                        <div class="form-group">
+                            <label>Escolha um valor (R$)</label>
+                            <div class="donation-amounts">
+                                <button type="button" class="amount-btn" data-value="30">R$ 30</button>
+                                <button type="button" class="amount-btn" data-value="50">R$ 50</button>
+                                <button type="button" class="amount-btn active" data-value="80">R$ 80</button>
+                                <button type="button" class="amount-btn" data-value="other">Outro</button>
+                            </div>
+                            <input type="number" id="custom-amount" class="form-input custom-amount-input hidden" placeholder="Digite o valor desejado (Ex: 100)" min="1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pagamento">Frequência / Forma</label>
+                            <select id="pagamento" class="form-input" required>
+                                <option value="" disabled selected>Selecione a forma de pagamento</option>
+                                <option value="pix">PIX (Única ou Mensal)</option>
+                                <option value="cartao">Cartão de Crédito</option>
+                                <option value="boleto">Boleto Bancário</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" class="form-input" placeholder="Seu nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" class="form-input" placeholder="seu@email.com" required>
+                        </div>
+
+                        <button type="submit" class="btn-cta submit-btn">
+                            <i class="fa-solid fa-heart"></i> Confirmar Doação
+                        </button>
+                        
+                        <p class="form-secure-note">
+                            <i class="fa-solid fa-lock"></i> Pagamento 100% seguro
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                
+                <div class="footer-brand">
+                    <h3>Lucas Tech</h3> <p>0987654321</p>
+                    <p>1234567890</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Siga nossas redes</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a> 
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lucas Tech. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Termos de uso</a>
+                    <a href="#">Política de privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
