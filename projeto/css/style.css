@@ -369,7 +369,13 @@ a:hover {
 .about-text { padding-left: 16px; }
 .about-text .section-label { margin-bottom: 12px; }
 .about-text .section-title { margin-bottom: 20px; }
-.about-text p { color: var(--clr-muted); margin-bottom: 16px; }
+
+.about-text p { 
+    color: var(--clr-muted); 
+    margin-bottom: 16px; 
+    text-align: justify;
+    hyphens: auto;
+}
 
 .about-values {
   margin: 24px 0 32px;
@@ -673,32 +679,55 @@ a:hover {
 
 /* --- Responsividade para telas menores (mobile) --- */
 @media (max-width: 768px) {
-  .hero-title {
-        font-size: 2.5rem; 
+    .hero-title {
+    font-size: 2.5rem; 
   }
 
+  .hero-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 220px;
+  }
+  
+  .hero-stats-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-card {
+    border-right: none;
+  }
+
+  .stat-card:nth-child(odd) {
+    border-right: 1px solid var(--clr-white-fixed);
+  }
+
+  .stat-card:nth-child(1),
+  .stat-card:nth-child(2) {
+    border-bottom: 1px solid var(--clr-white-fixed);
+  }
+  
   .menu-hamburguer { 
-      display: block; 
+    display: block; 
   }
 
   /* O container do menu agora ocupa a linha de baixo inteira */
   .navbar .nav-container {
-      display: none;
-      width: 100%;   
-      order: 3;      
-      padding-top: 20px;
-    }
+    display: none;
+    width: 100%;   
+    order: 3;      
+    padding-top: 20px;
+  }
 
   /* Quando o JS adiciona 'active', ele aparece e estica a navbar branca */
   .navbar .nav-container.active {
-      display: block; 
+    display: block; 
   }
 
   .nav-list { 
-      flex-direction: column;
-      align-items: center;
-      gap: 20px; 
-      padding-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    padding-bottom: 20px;
   }
 
   /* Ajuste de ordem para manter Logo na esquerda e Hamburguer na direita */
@@ -707,34 +736,71 @@ a:hover {
 
   /* Ajuste do carrossel no mobile para mostrar 1 card por vez */
   .carousel-track {
-      grid-auto-columns: 100%;
+    grid-auto-columns: 100%;
   }
   
   .about-image-wrap { padding-left: 0; }
 
+  .about-badge-float{
+    position: static;
+    margin: 20px auto 0;
+    display: inline-flex;
+  }
+
   .section {
-      padding: 40px 0; 
+    padding: 40px 0; 
   }
 
   .donation-inner,
   .about-inner {
-      grid-template-columns: 1fr; 
-      gap: 40px; 
+    grid-template-columns: 1fr; 
+    gap: 40px; 
   }
 
   .donation-form-wrap {
-      padding: 20px; 
+    padding: 20px; 
   }
 
   .form-row {
-      grid-template-columns: 1fr; 
+    grid-template-columns: 1fr; 
   }
 
   .donation-amounts {
-      grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   .section-title {
-      font-size: 2rem;
+    font-size: 2rem;
+  }
+
+  /* Adicionando uma bordinha embaixo para separar a primeira linha da segunda */
+  .stat-card:nth-child(1), 
+  .stat-card:nth-child(2) {
+    border-bottom: 1px solid var(--clr-white-fixed);
+  }
+
+  /* Empilhando o rodapé (1 coluna) */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px; 
+    text-align: center; 
+  }
+  
+  /* Centraliza os links do rodapé no mobile */
+  .footer-links ul {
+    align-items: center; 
+  }
+  
+  /* Empilha os itens de copyright/legal no mobile */
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
   }
 }
